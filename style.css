@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #a8ccdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 99vh;
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.aside_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 20vw;
+    height: 100vh;
+
+    color: #ffffff;
+
+}
+
+.sidebar, .profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profil {
+    padding-bottom: 45px;
+}
+
+.photo_profil {
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+    padding: 10px;
+    margin: 30px 0 16px 0;
+}
+
+.nom_profil {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.adress_profil {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.side_elements {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.side_elements li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.side_elements li a {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.bouton {
+    border: none;
+    padding: 13px 15px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1b6c84;
+    cursor: pointer;
+    box-shadow: 1px 1px 0.5px black;
+}
+
+.bouton:hover {
+    color: #ffffff;
+    background-color: #41c6ee;
+}
+
+.side_elements li a:hover {
+    text-shadow: 1px 1px 0.3px rgb(0, 0, 0);
+    color: #41c6ee;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+
+}
