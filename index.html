@@ -3,31 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Tech_Manager</title>
+    <title>Desk_Manager</title>
 </head>
 <body>
     <aside class="aside_left">
+        <div class="profil">
+            <div class="photo_profil">NK</div> 
+            <P class="nom_profil">Norman Kumar P</P>
+            <P class="adress_profil">Normankumar@gmail.com</P>
+            <hr class="ligne">
+        </div>
         <nav class="sidebar">
-            <div class="profil">
-                <div class="photo_profil"> </div> 
-                <P class="nom_profil">Norman Kumar P</P>
-                <P class="adress_profil">Normankumar@gmail.com</P>
-            </div>
             <ul class="side_elements">
                 <li><a href="#"><span class="icon"><img src="Assets_icons/dashboard-line.svg" alt="icône dashboard"></span>Dashboard</a></li>
                 <li><a href="#"><span class="icon"><img src="Assets_icons/computer-line.svg" alt="icône d'ordinateur"></span>Ordinateurs</a></li>
                 <li><a href="#"><span class="icon"><img src="Assets_icons/group-line.svg" alt="icône groupe d'utilisateurs"></span>Utilisateurs</a></li>
-                <li><a href="#"><span class="icon"><img src="Assets_icons/wrench-line.svg" alt=""></span>Maintenance</a></li>
-                <li><a href="#"><span class="icon"><img src="Assets_icons/dossier-line.svg" alt=""></span>Rapport</a></li>
-                <li><a href="#"><span class="icon"><img src="Assets_icons/question-line.svg" alt=""></span>Support</a></li>
+                <li><a href="#"><span class="icon"><img src="Assets_icons/wrench-line.svg" alt="icône clé de réparation"></span>Maintenance</a></li>
+                <li><a href="#"><span class="icon"><img src="Assets_icons/dossier-line.svg" alt="icône tableau de bilan"></span>Rapport</a></li>
+                <li><a href="#"><span class="icon"><img src="Assets_icons/question-line.svg" alt="icône de support"></span>Support</a></li>
                 <li><a href="#"> <span class="icon"><img src="Assets_icons/settings-line.svg" alt="icône des paramètres"></span>Paramètres</a></li>
             </ul>
-            <button class="bouton">Déconnexion</button>
+            <button class="bouton"><span class="icon"><img src="Assets_icons/logout-box-r-line.svg" alt="icône de déconnexion"></span>Déconnexion</button>
         </nav>
     </aside>
 
     <main>
+        <section class="header">
+            <div class="header_left">
+                <h1 class="titre_header">Dashboard</h1>
+                <p class="sous-titre_header">Accueil/Vue d'ensemble</p>
+            </div>
+            <div class="header_right">
+                <div class="search-bar">
+                    <input type="search" placeholder="Rechercher un ordinateur" name="recherche" ,class="search-bar">
+                    <img src="Assets_icons/search-line.svg" alt="icône de recherche">
+                </div>
+                <div class="icons">
+                    <img src="Assets_icons/notification-2-line.svg" alt="icône de notification" class="box">
+                    <img src="Assets_icons/chat-1-line.svg" alt="icône de chat" class="box">
+                </div>
+            </div>
+        </section>
+
+        <div class="titre_main">
+            <h1>Vue d'ensemble</h1>
+        </div>
+
+        <section class="cards_container">
+            <div class="card">
+                <div class="logo-chiffre">
+                    <img src="Assets_icons/computer-line.svg" alt="icône d'ordinateur" class="logo-1">
+                    <p>Total ordinateurs <br><span class="accent-chiffre">142</span> <br> <span class="accent-mois-pos">↑ +4 ce mois</span></p>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="logo-chiffre ">
+                    <img src="Assets_icons/user-line.svg" alt="icône d'utilisateur" class="logo-2">
+                    <p>Utilisateurs actifs <br><span class="accent-chiffre">87</span> <br> <span class="accent-mois-pos">↑ +12 ce mois</span></p>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="logo-chiffre logo-3">
+                    <img src="Assets_icons/wrench-line.svg" alt="icône d'utilisateur" class="logo-3">
+                    <p>En maintenance<br><span class="accent-chiffre">11</span> <br> <span class="accent-mois-neg">↓ -2 ce mois</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="logo-chiffre logo-4">
+                    <img src="Assets_icons/checkbox-circle-line.svg" alt="icône d'utilisateur" class="logo-4">
+                    <p>Déjà Réparés<br><span class="accent-chiffre">30</span> <br> <span class="accent-mois-pos">↑ +16 ce mois</span></p>
+                </div>
+            </div>   
+        </section>
+
+        <table class="tableau">
+            <thead>
+                <tr>
+                    <th>Appareil</th>
+                    <th>Utilisateur</th>
+                    <th>Statut</th>
+                    <th>Date ajout</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="Assets_icons/computer-line.svg" alt="icône d'ordinateur" class="logo-table">PC de bureau</td>
+                    <td>Jean Dupont</td>
+                    <td><span class="statut en-maintenance">En maintenance</span></td>
+                    <td>12/09/2024</td>
+                </tr>
+                <tr>
+                    <td><img src="Assets_icons/computer-line.svg" alt="icône d'ordinateur" class="logo-table">PC de bureau</td>
+                    <td>Jean Dupont</td>
+                    <td><span class="statut en-maintenance">En maintenance</span></td>
+                    <td>12/09/2024</td>
+                </tr>
+                <tr>
+                    <td><img src="Assets_icons/computer-line.svg" alt="icône d'ordinateur" class="logo-table">PC de bureau</td>
+                    <td>Jean Dupont</td>
+                    <td><span class="statut en-maintenance">En maintenance</span></td>
+                    <td>12/09/2024</td>
+                </tr>
+                <tr>
+                    <td><img src="Assets_icons/computer-line.svg" alt="icône d'ordinateur" class="logo-table">PC de bureau</td>
+                    <td>Jean Dupont</td>
+                    <td><span class="statut en-maintenance">En maintenance</span></td>
+                    <td>12/09/2024</td>
+                </tr>
+
+            </tbody>
+        </table>
 
     </main>
     
