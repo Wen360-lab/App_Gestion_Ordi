@@ -1,0 +1,59 @@
+.tableau {
+    border-collapse: collapse;
+    min-width: 90%;
+    width: 1017px;
+
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    margin: 20px 30px;
+
+    cursor: pointer;
+} 
+
+thead tr {
+    border-radius: 15px;
+    background-color: #77b9d5;
+    font-family: Sora, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+}
+
+tbody tr {
+    font-family: 'DM sans', sans-serif;
+    font-size: 14px;
+    color: #284875;
+}
+
+tbody tr .logo-table {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #77b9d5;
+}
+
+.statut-en-maintenance {
+    color: #dc4130;
+    font-weight: bold;
+}
+
+.statut-deja-repare {
+    color: #2e9e6b;
+    font-weight: bold;
+}
+.statut-endommage {
+    color: #bc1430;
+    font-weight: bold;
+}
+
